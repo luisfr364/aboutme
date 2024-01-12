@@ -592,6 +592,18 @@ video {
   margin-top: 18rem;
 }
 
+.mt-64 {
+  margin-top: 16rem;
+}
+
+.mt-60 {
+  margin-top: 15rem;
+}
+
+.mt-7 {
+  margin-top: 1.75rem;
+}
+
 .flex {
   display: flex;
 }
@@ -622,6 +634,14 @@ video {
 
 .h-\[55svh\] {
   height: 55svh;
+}
+
+.h-\[57svh\] {
+  height: 57svh;
+}
+
+.h-\[56svh\] {
+  height: 56svh;
 }
 
 .w-1\/2 {
