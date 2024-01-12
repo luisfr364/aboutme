@@ -620,6 +620,10 @@ video {
   height: auto;
 }
 
+.h-\[55svh\] {
+  height: 55svh;
+}
+
 .w-1\/2 {
   width: 50%;
 }
