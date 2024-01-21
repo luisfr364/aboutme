@@ -1,12 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-    content: ["./*.{html,js}"],
+    content: ["./*{html,js}"],
     theme: {
         extend: {
             backgroundImage: {
                 squares: "url('../assets/squares.png')",
                 patterm: "url('../assets/ttten.svg')",
                 shortA: "url('../assets/arrow-down-short.svg')",
+                shortB: "url('../assets/arrow-right-short.svg')",
             },
             keyframes: {
                 opacity1: {
