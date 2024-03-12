@@ -1,0 +1,48 @@
+.contactList {
+  margin: 0 30svw;
+}
+
+.contactList__title {
+  font-family: var(--secondary-font);
+  font-size: 2.5rem;
+  font-style: bold;
+}
+
+.contactList__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  width: 80%;
+  margin: 1em 0;
+  gap: 1.2em;
+}
+
+.list__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 8svw;
+  height: 12svh;
+  border: 2px solid black;
+  text-align: center;
+  cursor: pointer;
+}
+
+.list__item:hover {
+  background-color: var(--secondary-color);
+  transition: 0.4s;
+}
+
+.item__image {
+  width: 3.5svw;
+}
+
+.item__link {
+  margin-top: 5px;
+  font-size: 1.5rem;
+  font-family: var(--secondary-font);
+  color: var(--primary-color);
+  text-decoration: none;
+}

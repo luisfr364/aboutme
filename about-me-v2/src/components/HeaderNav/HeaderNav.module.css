@@ -1,0 +1,33 @@
+.nav {
+  list-style: none;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: justify-center;
+  width: fit-content;
+  padding: 0;
+  margin: 0.5em 0 0 0;
+  list-style: none;
+  color: black;
+}
+
+.list__item {
+  margin: 0 0.2em;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.list__item > a {
+  text-decoration: none;
+  color: inherit;
+}
+
+@media screen and (max-width: 768px) {
+  .nav__list {
+    margin-left: 30svw;
+  }
+}

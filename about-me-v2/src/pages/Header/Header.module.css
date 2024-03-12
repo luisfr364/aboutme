@@ -1,0 +1,55 @@
+header {
+  height: 50svh;
+}
+
+.header__headerBlock {
+  display: flex;
+  flex-direction: column;
+  margin: 45svh 0 0 50svw;
+  align-items: center;
+  text-align: center;
+}
+
+.headerBlock__textblock {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: black;
+  padding: 3em 0;
+  text-align: left;
+}
+
+.header__headerBlock > h1,
+p {
+  margin-left: 0.8em;
+}
+
+.textblock__title {
+  margin: 0 0.3em;
+  font-size: 2rem;
+  font-family: var(--primary-font);
+  color: var(--primary-font-color);
+}
+
+.textblock__paragraph {
+  font-family: var(--secondary-font);
+  font-size: 1.3rem;
+  color: grey;
+}
+
+@media screen and (max-width: 768px) {
+  .header__headerBlock {
+    margin: 30svh 0 0 0;
+    width: 80%;
+  }
+  .headerBlock__textblock {
+    margin-left: 45svw;
+    padding: 2em 0;
+  }
+  .textblock__title {
+    font-size: 1.5rem;
+  }
+  .textblock__paragraph {
+    font-size: 1rem;
+  }
+}

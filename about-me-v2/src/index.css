@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@400;700&family=Roboto&display=swap");
+
+:root {
+  --primary-font: "Poppins", sans-serif;
+  --secondary-font: "Lato", sans-serif;
+  --tertiary-font: "Roboto", sans-serif;
+  --primary-font-color: #ffffff;
+  --secondary-font-color: grey;
+  --secondary-color: rgba(128, 128, 128, 0.219);
+}
+
+body {
+  overflow-x: hidden;
+}
