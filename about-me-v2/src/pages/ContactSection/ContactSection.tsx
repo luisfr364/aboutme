@@ -24,7 +24,7 @@ const list = [
 
 function ContactSection() {
   return (
-    <section className={styles.section}>
+    <section className={styles.section} id='contact'>
       <ContactList contactList={list} contactListTitle='Contato' />
     </section>
   );

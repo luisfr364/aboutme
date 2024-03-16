@@ -44,7 +44,7 @@
 
 @media screen and (max-width: 768px) {
   .DropDownList {
-    margin: 5svh 0 10svh 15svw;
+    margin: 5svh 0 0 15svw;
   }
 
   .DropDownList__title {
