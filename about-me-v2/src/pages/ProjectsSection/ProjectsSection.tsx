@@ -13,24 +13,6 @@ const props: Array<IProjectsSwiperItem> = [
     ProjectDemoLogoPath: "./public/website-click-svgrepo-com.svg",
     ProjectDemoLink: "https://www.google.com",
   },
-  {
-    ProjectName: "Project 2",
-    ProjectDescription: "Description 2",
-    ProjectImagePath: "https://placehold.co/200",
-    ProjectRepoLink: "#",
-    ProjectRepoLogoPath: "./github-rounded-border-svgrepo-com.svg",
-    ProjectDemoLogoPath: "./public/website-click-svgrepo-com.svg",
-    ProjectDemoLink: "https://www.google.com",
-  },
-  {
-    ProjectName: "Project 3",
-    ProjectDescription: "Description 3",
-    ProjectImagePath: "https://placehold.co/200",
-    ProjectRepoLink: "#",
-    ProjectRepoLogoPath: "./github-rounded-border-svgrepo-com.svg",
-    ProjectDemoLogoPath: "./public/website-click-svgrepo-com.svg",
-    ProjectDemoLink: "https://www.google.com",
-  },
 ];
 
 function ProjectsSection() {
