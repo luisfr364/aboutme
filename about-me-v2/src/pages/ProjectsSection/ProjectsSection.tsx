@@ -1,8 +1,8 @@
 import ProjectsSwiper from "../../components/SwiperProjects/ProjectsSwiper";
 import styles from "./ProjectsSection.module.css";
-import { IProjectsSwiperItemProps } from "../../components/SwiperProjects/ProjectsSwiper/interfaces";
+import { IProjectsSwiperItem } from "./../../components/SwiperProjects/ProjectsSwiperItem/interfaces";
 
-const props: IProjectsSwiperItemProps = [
+const props: Array<IProjectsSwiperItem> = [
   {
     ProjectName: "Esse site",
     ProjectDescription: `Site criado com intuito de apresentar minhas habilidades e projetos que crio para meu portfólio digital.
@@ -19,6 +19,7 @@ const props: IProjectsSwiperItemProps = [
     ProjectImagePath: "https://placehold.co/200",
     ProjectRepoLink: "#",
     ProjectRepoLogoPath: "./github-rounded-border-svgrepo-com.svg",
+    ProjectDemoLogoPath: "./public/website-click-svgrepo-com.svg",
     ProjectDemoLink: "https://www.google.com",
   },
   {
@@ -27,6 +28,7 @@ const props: IProjectsSwiperItemProps = [
     ProjectImagePath: "https://placehold.co/200",
     ProjectRepoLink: "#",
     ProjectRepoLogoPath: "./github-rounded-border-svgrepo-com.svg",
+    ProjectDemoLogoPath: "./public/website-click-svgrepo-com.svg",
     ProjectDemoLink: "https://www.google.com",
   },
 ];

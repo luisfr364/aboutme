@@ -1,4 +1,4 @@
-import { IProjectsSwiperItemProps, IProjectsSwiperItem } from "./interfaces.ts";
+import { IProjectsSwiperItem } from "./interfaces.ts";
 import styles from "./ProjectsSwiperItem.module.css";
 
 function ProjectsSwiperItem(props: IProjectsSwiperItem) {

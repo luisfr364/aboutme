@@ -1,6 +1,5 @@
 import { contactListItemProps, contactListProps } from "./interfaces.ts";
 import styles from "./ContactList.module.css";
-import { useRef } from "react";
 
 function ContactList(props: contactListProps): JSX.Element {
   return (
