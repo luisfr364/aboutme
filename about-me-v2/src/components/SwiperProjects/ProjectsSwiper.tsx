@@ -9,7 +9,7 @@ import { Navigation } from "swiper/modules";
 const ProjectsSwiper = (props: IProjectsSwiperItemProps) => {
   return (
     <Swiper
-      spaceBetween={5}
+      spaceBetween={1}
       slidesPerView={2}
       onSlideChange={() => console.log("slide change")}
       modules={[Navigation]}
@@ -22,6 +22,8 @@ const ProjectsSwiper = (props: IProjectsSwiperItemProps) => {
             ProjectDescription={project.ProjectDescription}
             ProjectImagePath={project.ProjectImagePath}
             ProjectRepoLink={project.ProjectRepoLink}
+            ProjectRepoLogoPath={project.ProjectRepoLogoPath}
+            ProjectDemoLogoPath={project.ProjectDemoLogoPath}
             ProjectDemoLink={project.ProjectDemoLink}
           />
         </SwiperSlide>
