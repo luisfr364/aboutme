@@ -1,6 +1,9 @@
 import DropDownList from "../../components/DropDownStackList/DropDownList.tsx";
+import BnWCodeWindow from "../../components/BnWCodeWindow/BnWCodeWindow.tsx";
 import { items } from "../../components/DropDownStackList/interfaces.ts";
 import styles from "./AboutSection.module.css";
+
+import { useState } from "react";
 
 const item: items[] = [
   {
@@ -21,6 +24,8 @@ const item: items[] = [
 ];
 
 function AboutSection() {
+  const [language, setLanguage] = useState("helloWorld.js");
+
   return (
     <section className={styles.aboutMe}>
       <div className={styles.aboutMe__textBlock}>
@@ -33,7 +38,13 @@ function AboutSection() {
           mais novas tecnologias disponíveis.
         </p>
       </div>
-      <DropDownList title='Stack' itemsArray={item} />
+      <div className={styles.aboutGrid}>
+        <DropDownList title='Stack' itemsArray={item} />
+        <BnWCodeWindow
+          language={language}
+          code={'console.log("Hello World!")'}
+        />
+      </div>
     </section>
   );
 }

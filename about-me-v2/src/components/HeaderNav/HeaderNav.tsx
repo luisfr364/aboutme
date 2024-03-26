@@ -5,13 +5,13 @@ function HeaderNav() {
     <nav className={styles.nav}>
       <ul className={styles.nav__list}>
         <li className={styles.list__item}>
-          <a href='#about'>About</a>
+          <a href='#about'>Sobre</a>
         </li>
         <li className={styles.list__item}>
-          <a href='#projects'>Projects</a>
+          <a href='#projects'>Projetos</a>
         </li>
         <li className={styles.list__item}>
-          <a href='#contact'>Contact</a>
+          <a href='#contact'>Contato</a>
         </li>
       </ul>
     </nav>

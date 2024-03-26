@@ -1,15 +1,14 @@
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
 import { IProjectsSwiperItemProps } from "./ProjectsSwiperItem/interfaces";
 import ProjectsSwiperItem from "./ProjectsSwiperItem/ProjectSwiperItem";
 
 import "swiper/css";
 import "swiper/css/navigation";
-import { Navigation } from "swiper/modules";
 
 const ProjectsSwiper = (props: IProjectsSwiperItemProps) => {
   return (
     <Swiper
-      spaceBetween={1}
       slidesPerView={2}
       onSlideChange={() => console.log("slide change")}
       modules={[Navigation]}

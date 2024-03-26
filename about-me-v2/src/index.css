@@ -7,8 +7,21 @@
   --primary-font-color: #ffffff;
   --secondary-font-color: grey;
   --secondary-color: rgba(128, 128, 128, 0.219);
+  --tertirary-color: black;
+  /* SWIPER VARIABLES */
+  --swiper-theme-color: #000;
 }
 
 body {
   overflow-x: hidden;
+}
+
+/* SWIPER STYLES OVERRIDING */
+
+.swiper-slide {
+  width: 48% !important;
+}
+
+.swiper-wrapper {
+  margin: 0 15svw;
 }

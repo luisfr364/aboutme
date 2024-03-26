@@ -2,10 +2,10 @@ interface IProjectsSwiperItem {
   ProjectName: string;
   ProjectDescription: string;
   ProjectImagePath: string;
-  ProjectRepoLink: string;
-  ProjectRepoLogoPath: string;
-  ProjectDemoLink: string;
-  ProjectDemoLogoPath: string;
+  ProjectRepoLink?: string;
+  ProjectRepoLogoPath?: string;
+  ProjectDemoLink?: string;
+  ProjectDemoLogoPath?: string;
 }
 
 interface IProjectsSwiperItemProps {

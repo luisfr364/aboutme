@@ -24,6 +24,14 @@
   margin: 0 0 0.5em 0;
 }
 
+.aboutGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2em;
+  margin: 0 1em;
+  height: 80%;
+}
+
 @media screen and (max-width: 768px) {
   .aboutMe__textBlock {
     text-align: justify;
@@ -36,5 +44,14 @@
   }
   .textBlock__paragraph {
     font-size: 1.3rem;
+  }
+
+  .aboutGrid {
+    grid-template-columns: 1fr;
+    margin: 0;
+  }
+
+  .aboutGrid > div {
+    margin: 0 0 0 15svw;
   }
 }
