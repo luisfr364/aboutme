@@ -16,10 +16,13 @@
 .container__fakeCodeEditor {
   border: 2px solid var(--tertirary-color);
   background-color: var(--secondary-color);
+  min-height: 40svh;
 }
 
 .container__fakeCodeEditor > pre {
-  margin: 3em 0 20svh 2em;
+  margin: 1em 1em;
+  font-family: var(--secondary-font);
+  font-size: 1.2em;
 }
 
 .tile {

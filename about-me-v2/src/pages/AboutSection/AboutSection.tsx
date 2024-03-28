@@ -17,12 +17,31 @@ const item: items[] = [
           return (
             <h1>Hello World!</h1>
           );
-        export default HelloWorld;
-      }
-      `,
+        }
+
+
+        export default HelloWorld;`,
   },
   { name: "Node", iconPath: "https://www.svgrepo.com/show/452075/node-js.svg" },
-  { name: "Express", iconPath: "path" },
+  {
+    name: "Express",
+    iconPath: "path",
+    nameToPass: "helloWorld.js",
+    code: `import express from 'express';
+
+  const app = express();
+
+  const port = 3000;
+
+  app.get('/', (req, res) => {
+    res.status(200).send('Hello World!');
+    }
+    
+    app.listen(port, () => {
+      console.log('Server is running on port: ' + port);
+    });
+  `,
+  },
   {
     name: "TypeScript",
     iconPath: "https://www.svgrepo.com/show/374146/typescript-official.svg",
