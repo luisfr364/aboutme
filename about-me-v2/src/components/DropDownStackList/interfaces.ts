@@ -2,12 +2,17 @@ interface items {
   name: string;
   iconPath: string;
   nameToPass?: string;
-  listItemFunc?: (nameToPass: string) => void;
+  code?: string;
+  language?: string;
+  setLanguage?: (language: string) => void;
+  setCode?: (code: string) => void;
 }
 
 interface DropDownListProps {
   title: string;
   itemsArray: items[];
+  setLanguage?: (language: string) => void;
+  setCode?: (code: string) => void;
 }
 
 export type { items, DropDownListProps };

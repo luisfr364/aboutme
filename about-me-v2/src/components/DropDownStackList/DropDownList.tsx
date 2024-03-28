@@ -24,7 +24,12 @@ function DropDownList(props: DropDownListProps): JSX.Element {
       </div>
       <ul className={isOpen ? styles.DropDownList__list : styles.hidden}>
         {props.itemsArray.map((item) => (
-          <ListItem {...item} key={item.name} />
+          <ListItem
+            {...item}
+            key={item.name}
+            setCode={props.setCode}
+            setLanguage={props.setLanguage}
+          />
         ))}
       </ul>
     </div>
@@ -32,10 +37,20 @@ function DropDownList(props: DropDownListProps): JSX.Element {
 }
 
 function ListItem(props: items): JSX.Element {
+  function handleClick(
+    setCode: (code: string) => void,
+    setLanguage: (code: string) => void
+  ) {
+    if (!props.code) return;
+
+    setCode(props.code);
+    setLanguage(props.nameToPass || props.name);
+  }
+
   return (
     <li
       className={styles.listItem}
-      onClick={() => props.listItemFunc?.(props.nameToPass || props.name)}
+      onClick={() => handleClick(props.setCode, props.setLanguage)}
     >
       <img
         className={styles.listItem__icon}

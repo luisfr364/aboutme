@@ -10,6 +10,16 @@ const item: items[] = [
     name: "React",
     iconPath:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/128px-React-icon.svg.png",
+    nameToPass: "HelloWorld.jsx",
+    code: `import React from 'react';
+
+      function HelloWorld() {
+          return (
+            <h1>Hello World!</h1>
+          );
+        export default HelloWorld;
+      }
+      `,
   },
   { name: "Node", iconPath: "https://www.svgrepo.com/show/452075/node-js.svg" },
   { name: "Express", iconPath: "path" },
@@ -25,6 +35,7 @@ const item: items[] = [
 
 function AboutSection() {
   const [language, setLanguage] = useState("helloWorld.js");
+  const [code, setCode] = useState("console.log('Hello World!')");
 
   return (
     <section className={styles.aboutMe}>
@@ -39,11 +50,13 @@ function AboutSection() {
         </p>
       </div>
       <div className={styles.aboutGrid}>
-        <DropDownList title='Stack' itemsArray={item} />
-        <BnWCodeWindow
-          language={language}
-          code={'console.log("Hello World!")'}
+        <DropDownList
+          title='Stack'
+          itemsArray={item}
+          setLanguage={setLanguage}
+          setCode={setCode}
         />
+        <BnWCodeWindow language={language} code={code} />
       </div>
     </section>
   );
