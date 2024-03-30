@@ -9,8 +9,8 @@ import "swiper/css/navigation";
 const ProjectsSwiper = (props: IProjectsSwiperItemProps) => {
   return (
     <Swiper
-      slidesPerView={2}
-      onSlideChange={() => console.log("slide change")}
+      slidesPerView={1}
+      spaceBetween={1}
       modules={[Navigation]}
       navigation
     >

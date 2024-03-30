@@ -17,11 +17,21 @@ body {
 }
 
 /* SWIPER STYLES OVERRIDING */
-
-.swiper-slide {
-  width: 48% !important;
+.swiper {
+  height: 80svh;
 }
 
-.swiper-wrapper {
-  margin: 0 15svw;
+@media (max-width: 768px) {
+  .swiper-slide {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  .swiper {
+    height: 70svh !important;
+  }
+  .swiper-slide {
+    width: 100% !important;
+  }
 }

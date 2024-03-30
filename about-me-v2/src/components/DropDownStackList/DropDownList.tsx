@@ -38,13 +38,13 @@ function DropDownList(props: DropDownListProps): JSX.Element {
 
 function ListItem(props: items): JSX.Element {
   function handleClick(
-    setCode: (code: string) => void,
-    setLanguage: (code: string) => void
+    setCode?: (code: string) => void,
+    setLanguage?: (code: string) => void
   ) {
-    if (!props.code) return;
+    if (!props.code || !setCode) return;
 
-    setCode(props.code);
-    setLanguage(props.nameToPass || props.name);
+    setCode?.(props.code);
+    setLanguage?.(props.nameToPass || props.name);
   }
 
   return (

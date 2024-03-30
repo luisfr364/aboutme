@@ -1,0 +1,27 @@
+.stackSection {
+  height: 45svh;
+}
+
+.stackGrid {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr;
+  gap: 2em;
+  height: 80%;
+}
+
+@media (max-width: 768px) {
+  .stackSection {
+    height: 80svh;
+  }
+
+  .stackGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .stackSection {
+    height: 60svh;
+  }
+}

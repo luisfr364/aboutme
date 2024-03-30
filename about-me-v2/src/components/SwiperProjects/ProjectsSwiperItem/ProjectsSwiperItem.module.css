@@ -1,9 +1,10 @@
 .projectItem {
   display: flex;
   flex-direction: column;
-  width: 50%;
-  height: 20svh;
+  width: 30%;
+  height: 2svh;
   padding: 2.5em 2em 30% 2em;
+  margin-left: 25svw;
   border: 2px solid black;
   background-color: rgba(128, 128, 128, 0.02);
 }
@@ -46,4 +47,36 @@
   margin-left: 0.5em;
   font-size: 1.3rem;
   font-family: var(--tertiary-font);
+}
+
+@media (min-width: 350px) and (max-width: 768px) {
+  .projectItem__desc > h2 {
+    font-size: 1.5rem;
+  }
+
+  .projectItem {
+    height: 35svh;
+    width: 50%;
+    margin-left: 18svw;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .projectItem {
+    height: 45%;
+    width: 60%;
+    margin-left: 17svw;
+  }
+
+  .projectItem__desc > h2 {
+    font-size: 2.5rem;
+  }
+
+  .projectItem__desc > p {
+    font-size: 1.5rem;
+  }
+
+  .linksListItem > a > img {
+    width: 2em;
+  }
 }

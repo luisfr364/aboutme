@@ -1,13 +1,15 @@
-import Header from "./pages/Header/Header.tsx";
-import AboutSection from "./pages/AboutSection/AboutSection.tsx";
-import ContactSection from "./pages/ContactSection/ContactSection.tsx";
-import ProjectsSection from "./pages/ProjectsSection/ProjectsSection.tsx";
+import Header from "./sections/Header/Header.tsx";
+import AboutSection from "./sections/AboutSection/AboutSection.tsx";
+import ContactSection from "./sections/ContactSection/ContactSection.tsx";
+import ProjectsSection from "./sections/ProjectsSection/ProjectsSection.tsx";
+import StackNCodeSection from "./sections/StackNCodeSection/StackNCodeSection.tsx";
 
 function App() {
   return (
     <>
       <Header />
       <AboutSection />
+      <StackNCodeSection />
       <ProjectsSection />
       <ContactSection />
     </>

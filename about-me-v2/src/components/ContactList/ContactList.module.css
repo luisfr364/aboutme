@@ -69,3 +69,25 @@
     width: 13svw;
   }
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .contactList {
+    margin: 10svh 15svw;
+  }
+
+  .contactList__title {
+    font-size: 2rem;
+  }
+
+  .contactList__list {
+    width: 90%;
+  }
+
+  .list__item {
+    width: 15svw;
+  }
+
+  .item__image {
+    width: 5svw;
+  }
+}

@@ -1,5 +1,5 @@
 .aboutMe {
-  height: 90svh;
+  height: 80svh;
 }
 
 .aboutMe__textBlock {
@@ -24,15 +24,26 @@
   margin: 0 0 0.5em 0;
 }
 
-.aboutGrid {
+.textBlock__img {
+  height: 100%;
+  width: 70%;
+  background-image: url("../../assets/IMG_20240304_185848_337.webp");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.textBlock__grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2em;
-  margin: 0 1em;
   height: 80%;
+  justify-items: center;
 }
 
 @media screen and (max-width: 768px) {
+  .aboutMe {
+    height: 50svh;
+  }
   .aboutMe__textBlock {
     text-align: justify;
     width: auto;
@@ -46,12 +57,12 @@
     font-size: 1.3rem;
   }
 
-  .aboutGrid {
-    grid-template-columns: 1fr;
-    margin: 0;
+  .textBlock__grid {
+    height: 30%;
+    display: block;
   }
 
-  .aboutGrid > div {
-    margin: 0 0 0 15svw;
+  .textBlock__img {
+    display: none;
   }
 }

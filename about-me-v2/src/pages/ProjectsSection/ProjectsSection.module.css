@@ -1,9 +1,0 @@
-section {
-  height: 80svh;
-}
-
-section > h2 {
-  margin: 2em;
-  font-size: 3rem;
-  font-family: var(--secondary-font);
-}

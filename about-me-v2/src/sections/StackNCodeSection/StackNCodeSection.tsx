@@ -1,9 +1,9 @@
+import { useState } from "react";
+
 import DropDownList from "../../components/DropDownStackList/DropDownList.tsx";
 import BnWCodeWindow from "../../components/BnWCodeWindow/BnWCodeWindow.tsx";
 import { items } from "../../components/DropDownStackList/interfaces.ts";
-import styles from "./AboutSection.module.css";
-
-import { useState } from "react";
+import styles from "./StackNCodeSection.module.css";
 
 const item: items[] = [
   {
@@ -11,8 +11,7 @@ const item: items[] = [
     iconPath:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/128px-React-icon.svg.png",
     nameToPass: "HelloWorld.jsx",
-    code: `import React from 'react';
-
+    code: `
       function HelloWorld() {
           return (
             <h1>Hello World!</h1>
@@ -25,7 +24,7 @@ const item: items[] = [
   { name: "Node", iconPath: "https://www.svgrepo.com/show/452075/node-js.svg" },
   {
     name: "Express",
-    iconPath: "path",
+    iconPath: "./src/assets/express-svgrepo-com.svg",
     nameToPass: "helloWorld.js",
     code: `import express from 'express';
 
@@ -45,30 +44,24 @@ const item: items[] = [
   {
     name: "TypeScript",
     iconPath: "https://www.svgrepo.com/show/374146/typescript-official.svg",
+    nameToPass: "helloWorld.ts",
+    code: `console.log('Hello World!');`,
   },
   {
     name: "JavaScript",
     iconPath: "https://www.svgrepo.com/show/452045/js.svg",
+    nameToPass: "helloWorld.js",
+    code: `console.log('Hello World!');`,
   },
 ];
 
-function AboutSection() {
+function StackNCodeSection() {
   const [language, setLanguage] = useState("helloWorld.js");
   const [code, setCode] = useState("console.log('Hello World!')");
 
   return (
-    <section className={styles.aboutMe}>
-      <div className={styles.aboutMe__textBlock}>
-        <h2 className={styles.textBlock__title}>Sobre Mim</h2>
-        <p className={styles.textBlock__paragraph}>
-          Olá! Meu nome é Luis Fernando e sou um desenvolvedor junior em busca
-          de experiência. Comecei a programar como hobby e venho em busca de
-          torna-lô minha profissão. Tenho experiência em e estou sempre em busca
-          de aprender novas tecnologias. Adoro resolver problemas utilizando as
-          mais novas tecnologias disponíveis.
-        </p>
-      </div>
-      <div className={styles.aboutGrid}>
+    <section className={styles.stackSection}>
+      <div className={styles.stackGrid}>
         <DropDownList
           title='Stack'
           itemsArray={item}
@@ -81,4 +74,4 @@ function AboutSection() {
   );
 }
 
-export default AboutSection;
+export default StackNCodeSection;

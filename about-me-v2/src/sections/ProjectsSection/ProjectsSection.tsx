@@ -11,7 +11,7 @@ const projectsArr: Array<IProjectsSwiperItem> = [
     ProjectRepoLink: "https://github.com/luisfr364/aboutme",
     ProjectRepoLogoPath: "./src/assets/github-rounded-border-svgrepo-com.svg",
     ProjectDemoLogoPath: "./src/assets/website-click-svgrepo-com.svg",
-    ProjectDemoLink: "https://www.google.com",
+    ProjectDemoLink: "#",
   },
   {
     ProjectName: "Projeto 2",
@@ -22,9 +22,11 @@ const projectsArr: Array<IProjectsSwiperItem> = [
 
 function ProjectsSection() {
   return (
-    <section className={styles.section}>
-      <h2>Projects</h2>
-      <ProjectsSwiper projects={projectsArr} />
+    <section className={styles.section} id='projects'>
+      <div className={styles.projectsContainer}>
+        <h2>Projetos</h2>
+        <ProjectsSwiper projects={projectsArr} />
+      </div>
     </section>
   );
 }

@@ -3,8 +3,7 @@
 }
 
 .DropDownList {
-  margin-top: 15svh;
-  margin-left: 10svw;
+  position: relative;
 }
 
 .DropDownList__text {
@@ -53,11 +52,7 @@
   font-size: 1.3rem;
 }
 
-@media screen and (max-width: 768px) {
-  .DropDownList {
-    margin: 5svh 0 0 15svw;
-  }
-
+@media (min-width: 350px) and (max-width: 768px) {
   .DropDownList__title {
     font-size: 2.5rem;
   }
@@ -67,7 +62,7 @@
   }
 
   .DropDownList__text {
-    width: 80%;
+    width: 50svw;
   }
   .DropDownList__list {
     margin-left: 10svw;
@@ -75,5 +70,27 @@
 
   .listItem__icon {
     width: 6svw;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .DropDownList__title {
+    font-size: 2.5rem;
+  }
+
+  .DropDownList__icon {
+    width: 5svw;
+  }
+
+  .DropDownList__text {
+    width: 50svw;
+  }
+  .DropDownList {
+    margin-left: 5svw;
+    width: 40svw;
+  }
+
+  .listItem__icon {
+    width: 4svw;
   }
 }
