@@ -16,7 +16,7 @@ const projectsArr: Array<IProjectsSwiperItem> = [
   {
     ProjectName: "Projeto 2",
     ProjectDescription: "Em Construção...",
-    ProjectImagePath: "https://www.svgrepo.com/show/403132/construction.svg",
+    ProjectImagePath: "#",
   },
 ];
 
