@@ -9,14 +9,14 @@ const projectsArr: Array<IProjectsSwiperItem> = [
     O site foi criado com react.js, css modules e swiper.js para a seção de projetos.`,
     ProjectImagePath: "./src/assets/sitePng.png",
     ProjectRepoLink: "https://github.com/luisfr364/aboutme",
-    ProjectRepoLogoPath: "./src/assets/github-rounded-border-svgrepo-com.svg",
-    ProjectDemoLogoPath: "./src/assets/website-click-svgrepo-com.svg",
+    ProjectRepoLogoPath: "./assets/github-rounded-border-svgrepo-com.svg",
+    ProjectDemoLogoPath: "./assets/website-click-svgrepo-com.svg",
     ProjectDemoLink: "#",
   },
   {
     ProjectName: "Projeto 2",
     ProjectDescription: "Em Construção...",
-    ProjectImagePath: "./src/assets/sitePng.png",
+    ProjectImagePath: "./assets/sitePng.png",
   },
 ];
 
