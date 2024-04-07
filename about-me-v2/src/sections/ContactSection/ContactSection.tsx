@@ -24,7 +24,10 @@ const list = [
 
 function ContactSection() {
   return (
-    <section className={styles.contactSection} id='contact'>
+    <section
+      className={`${styles.contactSection} pattern-checks-sm`}
+      id='contact'
+    >
       <ContactList contactList={list} contactListTitle='Contato' />
     </section>
   );

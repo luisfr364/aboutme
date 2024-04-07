@@ -18,7 +18,12 @@ body {
 
 /* SWIPER STYLES OVERRIDING */
 .swiper {
-  height: 80svh;
+  height: 100%;
+  background-image: radial-gradient(#000000 2px, transparent 2px) !important;
+  background-size: 24px 24px !important;
+  background-color: #ffffff;
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
 }
 
 @media (max-width: 768px) {

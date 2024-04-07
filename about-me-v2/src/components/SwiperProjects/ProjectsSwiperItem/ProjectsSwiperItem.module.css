@@ -1,12 +1,12 @@
 .projectItem {
   display: flex;
   flex-direction: column;
-  width: 30%;
-  height: 2svh;
-  padding: 2.5em 2em 30% 2em;
+  width: 25%;
+  height: fit-content;
+  padding: 2.5em 2em 2em 2em;
   margin-left: 25svw;
   border: 2px solid black;
-  background-color: rgba(128, 128, 128, 0.02);
+  background-color: rgb(253, 253, 253);
 }
 .projectItem__desc > img {
   width: 100%;
@@ -58,14 +58,15 @@
     height: 35svh;
     width: 50%;
     margin-left: 18svw;
+    margin-top: 10svh;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .projectItem {
-    height: 45%;
     width: 60%;
     margin-left: 17svw;
+    margin-top: 10svh;
   }
 
   .projectItem__desc > h2 {
