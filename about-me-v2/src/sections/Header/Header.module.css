@@ -17,6 +17,7 @@ header {
   background-color: black;
   padding: 3em 0;
   text-align: left;
+  animation: moveInRight 1.3s 0.3s ease-in-out;
 }
 
 .header__headerBlock > h1,
@@ -29,12 +30,37 @@ p {
   font-size: 2rem;
   font-family: var(--primary-font);
   color: var(--primary-font-color);
+  opacity: 0;
+  animation: fadeIn 0.5s 1.3s forwards;
 }
 
 .textblock__paragraph {
   font-family: var(--secondary-font);
   font-size: 1.3rem;
   color: grey;
+  opacity: 0;
+  animation: fadeIn 0.5s 1.5s forwards;
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(1000px);
+  }
+
+  100% {
+    transform: none;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 @media screen and (max-width: 768px) {
