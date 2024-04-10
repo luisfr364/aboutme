@@ -7,7 +7,7 @@ const projectsArr: Array<IProjectsSwiperItem> = [
     ProjectName: "Esse site",
     ProjectDescription: `Site criado com intuito de apresentar minhas habilidades e projetos que crio para meu portfólio digital.
     O site foi criado com react.js, css modules e swiper.js para a seção de projetos.`,
-    ProjectImagePath: "./src/assets/sitePng.png",
+    ProjectImagePath: "./sitePng.png",
     ProjectRepoLink: "https://github.com/luisfr364/aboutme",
     ProjectRepoLogoPath: "https://www.svgrepo.com/show/494149/github.svg",
     ProjectDemoLogoPath: "https://www.svgrepo.com/show/367884/web.svg",

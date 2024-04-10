@@ -24,7 +24,7 @@ const item: items[] = [
   { name: "Node", iconPath: "https://www.svgrepo.com/show/452075/node-js.svg" },
   {
     name: "Express",
-    iconPath: "./assets/express-svgrepo-com.svg",
+    iconPath: "./express-svgrepo-com.svg",
     nameToPass: "helloWorld.js",
     code: `import express from 'express';
 
