@@ -8,16 +8,16 @@
   font-family: var(--secondary-font);
 }
 
-@media (max-width: 768px) {
+@media (min-width: 300px) and (max-width: 768px) {
   .section {
-    height: 90svh;
+    height: 100svh;
   }
   .projectsContainer > h2 {
     font-size: 2rem;
   }
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .projectsContainer > h2 {
     font-size: 3rem;
   }

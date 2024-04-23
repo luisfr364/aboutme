@@ -22,17 +22,17 @@ body {
   background-image: radial-gradient(#000000 2px, transparent 2px) !important;
   background-size: 24px 24px !important;
   background-color: #ffffff;
-  padding-top: 1.5%;
-  padding-bottom: 1.5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .swiper-slide {
     width: 100% !important;
   }
 }
 
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .swiper {
     height: 70svh !important;
   }
