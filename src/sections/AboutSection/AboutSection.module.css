@@ -25,9 +25,8 @@
 }
 
 .textBlock__img {
-  height: 100%;
   width: 70%;
-  background-image: url("../../assets/IMG_20240304_185848_337.webp");
+  background-image: url("./me.jpeg");
   background-repeat: no-repeat;
   background-size: contain;
 }
