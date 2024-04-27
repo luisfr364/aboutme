@@ -4,6 +4,16 @@ import { IProjectsSwiperItem } from "./../../components/SwiperProjects/ProjectsS
 
 const projectsArr: Array<IProjectsSwiperItem> = [
   {
+    ProjectName: "Bone Loader",
+    ProjectDescription:
+      "Bone loader é uma lib simples que promete deixar a criação de telas de carregamento mais fáceis, contendo três elemento customizáveis",
+    ProjectImagePath: "./bone-loader.gif",
+    ProjectRepoLink: "https://github.com/luisfr364/bone-loader",
+    ProjectRepoLogoPath: "https://www.svgrepo.com/show/494149/github.svg",
+    ProjectDemoLogoPath: "https://www.svgrepo.com/show/367884/web.svg",
+    ProjectDemoLink: "#",
+  },
+  {
     ProjectName: "Esse site",
     ProjectDescription: `Site criado com intuito de apresentar minhas habilidades e projetos que crio para meu portfólio digital.
     O site foi criado com react.js, css modules e swiper.js para a seção de projetos.`,
@@ -12,11 +22,6 @@ const projectsArr: Array<IProjectsSwiperItem> = [
     ProjectRepoLogoPath: "https://www.svgrepo.com/show/494149/github.svg",
     ProjectDemoLogoPath: "https://www.svgrepo.com/show/367884/web.svg",
     ProjectDemoLink: "#",
-  },
-  {
-    ProjectName: "Projeto 2",
-    ProjectDescription: "Em Construção...",
-    ProjectImagePath: "#",
   },
 ];
 
