@@ -6,7 +6,7 @@ const projectsArr: Array<IProjectsSwiperItem> = [
   {
     ProjectName: "Bone Loader",
     ProjectDescription:
-      "Bone loader é uma lib simples que promete deixar a criação de telas de carregamento mais fáceis, contendo três elemento customizáveis",
+      "Bone loader é uma lib simples que promete deixar a criação de telas de carregamento mais fáceis, contendo três elementos customizáveis.",
     ProjectImagePath: "./bone-loader.gif",
     ProjectRepoLink: "https://github.com/luisfr364/bone-loader",
     ProjectRepoLogoPath: "https://www.svgrepo.com/show/494149/github.svg",
