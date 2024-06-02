@@ -1,5 +1,5 @@
 .stackSection {
-  height: 45svh;
+  height: max-content;
 }
 
 .stackGrid {

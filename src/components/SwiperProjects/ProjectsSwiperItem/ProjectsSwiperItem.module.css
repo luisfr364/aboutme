@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   width: 25%;
-  height: 40svh;
+  height: max-content;
   padding: 2.5em 2em 2em 2em;
   margin-left: 25svw;
   border: 2px solid black;
@@ -56,7 +56,6 @@
   }
 
   .projectItem {
-    height: 43svh;
     width: 50%;
     margin-left: 18svw;
     margin-top: 5svh;
@@ -65,7 +64,6 @@
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .projectItem {
-    height: 50svh;
     width: 60%;
     margin-left: 17svw;
     margin-top: 10svh;
