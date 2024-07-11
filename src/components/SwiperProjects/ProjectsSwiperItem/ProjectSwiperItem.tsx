@@ -9,20 +9,22 @@ function ProjectsSwiperItem(props: IProjectsSwiperItem) {
         <h2>{props.ProjectName}</h2>
         <p>{props.ProjectDescription}</p>
       </div>
-      {props.ProjectRepoLink && props.ProjectDemoLogoPath && (
+      {props.ProjectRepoLink && (
         <ul className={styles.linksList}>
           <li className={styles.linksListItem}>
             <a href={props.ProjectRepoLink}>
-              <img src={props.ProjectRepoLogoPath} />
+              <img src='/github-icon.svg' />
               <p>Repo</p>
             </a>
           </li>
-          <li className={styles.linksListItem}>
-            <a href={props.ProjectDemoLink}>
-              <img src={props.ProjectDemoLogoPath} alt='website logo' />
-              <p>Demo</p>
-            </a>
-          </li>
+          {props.ProjectDemoLogoPath && (
+            <li className={styles.linksListItem}>
+              <a href={props.ProjectDemoLink}>
+                <img src={props.ProjectDemoLogoPath} alt='website logo' />
+                <p>Demo</p>
+              </a>
+            </li>
+          )}
         </ul>
       )}
     </div>

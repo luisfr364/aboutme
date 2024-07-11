@@ -28,6 +28,10 @@ body {
   padding-bottom: 2%;
 }
 
+.swiper-slide-active {
+  height: 60svh;
+}
+
 @media screen and (max-width: 768px) {
   .swiper-slide {
     width: 100% !important;

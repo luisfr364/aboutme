@@ -9,7 +9,7 @@ const projectsArr: Array<IProjectsSwiperItem> = [
       "Bone loader é uma lib simples que promete deixar a criação de telas de carregamento mais fáceis, contendo três elementos customizáveis.",
     ProjectImagePath: "./bone-loader.gif",
     ProjectRepoLink: "https://github.com/luisfr364/bone-loader",
-    ProjectRepoLogoPath: "https://www.svgrepo.com/show/494149/github.svg",
+
     ProjectDemoLogoPath: "https://www.svgrepo.com/show/367884/web.svg",
     ProjectDemoLink: "#",
   },
@@ -19,9 +19,13 @@ const projectsArr: Array<IProjectsSwiperItem> = [
     O site foi criado com react.js, css modules e swiper.js para a seção de projetos.`,
     ProjectImagePath: "./sitePng.png",
     ProjectRepoLink: "https://github.com/luisfr364/aboutme",
-    ProjectRepoLogoPath: "https://www.svgrepo.com/show/494149/github.svg",
-    ProjectDemoLogoPath: "https://www.svgrepo.com/show/367884/web.svg",
-    ProjectDemoLink: "#",
+  },
+  {
+    ProjectName: "Pipconfig",
+    ProjectDescription:
+      "Pipconfig é um projeto que visa facilitar a configuração do arquivo de configurações do pipewire e oferece segurança com a possibilidade de backups.",
+    ProjectImagePath: "./pipconfig.png",
+    ProjectRepoLink: "https://github.com/luisfr364/pipconfig",
   },
 ];
 
